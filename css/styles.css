@@ -1,0 +1,638 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "RED BURGER";
+    src: url(../fonts/RED\ BURGER.otf);
+}
+
+/*INDEX*/
+
+/*Navegador*/
+
+.headerindex{
+    display: flex;
+    background-color: black;
+    height: 100px;
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .headerindex div img{
+    width: 250px;
+}
+
+.headerindex nav ul{
+    display: flex;
+   margin-right: 30px;
+   font-size: 25px;
+    list-style-type: none;
+}
+
+.headerindex nav ul li{
+    margin-left: 30px;
+    margin-right: 5px;
+}
+
+.headerindex nav ul li a{
+    color: green;;
+    text-decoration: none;
+    font-family:"RED BURGER";
+}
+
+/*Imagenes del main*/
+
+.mainindex{
+    background-color: rgb(216, 248, 216);
+    color: black;
+    height: 500px;
+}
+
+.mainindex h1{
+    margin-bottom: 5px;
+    font-family:"RED BURGER";
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/*Procesos de reparacion*/
+
+.mainindex h2{
+    font-family:"RED BURGER";
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(58, 111, 58);
+}
+
+.mainindex section ol{
+    display: inline-flex;
+    border: solid 5px black;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.tarjeta1{
+    font-size: 15px;
+    font-family: "RED BURGER";
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: solid black 3px;
+}
+
+.tarjeta1 img{
+    width: 150px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.tarjeta2{
+    font-size: 15px;
+    font-family: "RED BURGER";
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: solid black 3px;
+}
+
+.tarjeta2 img{
+    width: 150px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.tarjeta3{
+    font-size: 15px;
+    font-family: "RED BURGER";
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: solid black 3px;
+}
+
+.tarjeta3 img{
+    width: 150px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.tarjeta4{
+    font-size: 15px;
+    font-family: "RED BURGER";
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: solid black 3px;
+}
+
+.tarjeta4 img{
+    width: 150px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+/*aside con marcas de autos*/
+
+.asideindex{
+    display: flex;
+    border: solid 5px black;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.asideindex div img{
+    width: 70px;
+    height: 70px;
+}
+
+/*footer con logo e info*/
+
+.footerindex{
+   display: flex;
+    background-color: black;
+    justify-content: space-between;
+    color: green;
+    font-family:"RED BURGER";
+    padding: 20px 40px;
+}
+
+.footerindex img{
+    width: 250px;
+    margin-top: 25px;
+}
+
+.footerindex div ul{
+    text-align: center;
+}
+
+.footerindex a{
+    text-decoration: none;
+    font-family:"RED BURGER";
+    color: green;
+}
+
+.footerindex section{
+    display: flex;
+    align-items: center;
+}
+
+.footerindex section img{
+    width: 50px;
+    height: 50px;
+    border: solid 2px black;
+    margin-right: 25px;
+ }
+
+/* vista para telefonos moviles*/
+
+@media(max-width:480px){
+    body{
+        width: 480px;
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer"
+        ;
+     }
+
+    /* headerindex vista mobile*/
+
+.headerindex{
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+}
+
+.headerindex div img{
+    width: 150px;
+    height: 60px;
+}
+
+.headerindex nav ul{
+    font-size: 20px;
+    align-items: center;
+}
+
+/*mainindex vista mobile*/
+
+.mainindex{
+    grid-area: main;
+}
+
+.mainindex h1{
+    font-size: 25px;
+}
+
+.mainindex section ol{
+    width: 600px;
+    margin-left: 80px;
+}
+
+.mainindex section ol img{
+    width: 70px;
+    height: 70px;
+}
+
+/*asideindex vista mobile*/
+
+.asideindex{
+    display: flex;
+    grid-area: aside;  
+}
+
+.asideindex  div img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+/*footerindex vista mobile*/
+
+.footerindex{
+    grid-area: footer;  
+}
+
+.footerindex img{
+    width: 150px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.footerindex ul{
+    font-size: 10px;
+}
+
+.footerindex section div{
+    width: 60px;
+}
+
+.footerindex section div img{
+    width: 30px;
+    height: 30px;
+}
+
+}
+
+ /*Servicios*/
+
+/*Header servicios*/
+
+.headerservicios{
+    display: flex;
+    background-color: black;
+    height: 100px;
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .headerservicios div img{
+    width: 250px;
+}
+
+.headerservicios nav ul{
+    display: flex;
+   margin-right: 30px;
+   font-size: 25px;
+    list-style-type: none;
+}
+
+.headerservicios nav ul li{
+    margin-left: 30px;
+}
+
+.headerservicios nav ul li a{
+    color: green;;
+    text-decoration: none;
+    font-family:"RED BURGER";
+}
+
+/*Main servicios*/
+
+.mainservicios{
+grid-area: main;
+background-color: rgb(216, 248, 216);
+border: solid 5px black;
+}
+
+.mainservicios section{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.card{
+ background-color: rgb(50, 134, 50);
+ width: 300px;
+ height: 300px;
+ color: black;
+ text-align: center;
+ border: solid 5px black;
+ font-family:"RED BURGER";
+}
+
+.card button{
+    font-family: "RED BURGER";
+    background-color: white;
+    padding: 3px;
+}
+
+.mainservicios img{
+    width: 250px;
+    padding: 15px;
+}
+
+
+/*Footer servicios*/
+
+.footerservicios{
+    display: flex;
+    grid-area: footer;
+     background-color: black;
+     justify-content: space-between;
+     color: green;
+     font-family:"RED BURGER";
+     padding: 20px 40px;
+ }
+ 
+ .footerservicios img{
+     width: 250px;
+     margin-top: 25px;
+ }
+ 
+ .footerservicios div ul{
+     text-align: center;
+ }
+ 
+ .footerservicios a{
+     text-decoration: none;
+     font-family:"RED BURGER";
+     color: green;
+ }
+ 
+ .footerservicios section{
+     display: flex;
+     align-items: center;
+ }
+ 
+ .footerservicios section img{
+     width: 50px;
+     height: 50px;
+     border: solid 2px black;
+     margin-right: 25px;
+  }
+
+
+  /*¿Donde estamos? ubicacion*/
+
+
+  .bodyubicacion{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+    grid-template-columns: 40% 40% 20%;
+  }
+
+  /*header nav de la ubicacion*/
+
+  .headerubicacion{
+    display: flex;
+    background-color: black;
+    height: 100px;
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .headerubicacion div img{
+    width: 250px;
+}
+
+.headerubicacion nav ul{
+    display: flex;
+   margin-right: 30px;
+   font-size: 25px;
+    list-style-type: none;
+}
+
+.headerubicacion nav ul li{
+    margin-left: 30px;
+}
+.headerubicacion nav ul li a{
+    color: green;;
+    text-decoration: none;
+    font-family:"RED BURGER";
+}
+
+
+/*main de la ubicacion*/
+
+ .mainubicacion{
+    display: flex;
+    grid-area: main;
+    background-image: url(../img/fondo\ de\ ubicacion.jpg);
+    justify-content: center;
+    align-items: center;
+}
+
+  .mainubicacion div{
+    border: solid 5px black;
+  }
+
+
+  /*aside de la ubi con banner*/
+
+  .asideubicacion{
+    display: flex;
+    background-color: black;
+    grid-area: aside;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+  }
+
+  .asideubicacion img{
+    width: 300px;
+    height: 590px;
+  }
+
+
+/*Footer de la ubicacion*/
+
+
+  .footerubicacion{
+    display: flex;
+    grid-area: footer;
+     background-color: black;
+     justify-content: space-between;
+     color: green;
+     font-family:"RED BURGER";
+     padding: 20px 40px;
+ }
+ 
+
+ .footerubicacion img{
+     width: 250px;
+     margin-top: 25px;
+ }
+ 
+
+ .footerubicacion div ul{
+     text-align: center;
+ }
+ 
+ .footerubicacion a{
+     text-decoration: none;
+     font-family:"RED BURGER";
+     color: green;
+ }
+ 
+ .footerubicacion section{
+     display: flex;
+     align-items: center;
+ }
+ 
+ .footerubicacion section img{
+     width: 50px;
+     height: 50px;
+     border: solid 2px black;
+     margin-right: 25px;
+  }
+
+
+  /* Contacto*/
+
+  .bodycontacto{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+    grid-template-columns: 35% 35% 30%;
+    
+
+  }
+
+
+  .headercontacto{
+    display: flex;
+    background-color: black;
+    height: 100px;
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .headercontacto div img{
+    width: 250px;
+}
+
+.headercontacto nav ul{
+    display: flex;
+   margin-right: 30px;
+   font-size: 25px;
+    list-style-type: none;
+}
+
+.headercontacto nav ul li{
+    margin-left: 30px;
+}
+.headercontacto nav ul li a{
+    color: green;;
+    text-decoration: none;
+    font-family:"RED BURGER";
+}
+
+
+/*main del contacto*/
+
+.maincontacto{
+    grid-area: main;
+    background-color: rgb(216, 248, 216);
+    font-family:"RED BURGER";
+    font-size: 20px;
+    border: solid 5px black;
+}
+
+/*aside de contacto*/
+
+.asidecontacto{
+    border: solid 5px black;
+    grid-area: aside;
+    font-family:"RED BURGER";
+    font-size: 14px;
+    background-color: rgb(216, 248, 216);
+    color: black;
+    border: solid 5px black;
+}
+
+.asidecontacto h1{
+    font-size: 40px;
+}
+
+.asidecontacto p{
+    font-size: 30px;
+}
+
+/*footer de contacto*/
+
+.footercontacto{
+    display: flex;
+    grid-area: footer;
+     background-color: black;
+     justify-content: space-between;
+     color: green;
+     font-family:"RED BURGER";
+     padding: 20px 40px;
+ }
+ 
+ .footercontacto img{
+     width: 250px;
+     margin-top: 25px;
+ }
+ 
+ .footercontacto div ul{
+     text-align: center;
+ }
+ 
+ .footercontacto a{
+     text-decoration: none;
+     font-family:"RED BURGER";
+     color: green;
+ }
+ 
+ .footercontacto section{
+     display: flex;
+     align-items: center;
+ }
+ 
+ .footercontacto section img{
+     width: 50px;
+     height: 50px;
+     border: solid 2px black;
+     margin-right: 25px;
+  }
