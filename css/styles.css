@@ -400,6 +400,59 @@ border: solid 5px black;
      margin-right: 25px;
   }
 
+  /*vista mobile de servicios*/
+
+@media(max-width:480px){
+
+    /*servicios vista mobile*/
+
+    .headerservicios nav ul{
+        align-items: center;
+    }
+
+  
+    .mainservicios section{
+        display: grid;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 250px 250px 250px;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+    
+    .card{
+     width: 300px;
+     height: 250px;
+    }
+    
+    .mainservicios img{
+        width: 150px;
+    }
+
+.footerservicios{
+    grid-area: footer;  
+}
+
+.footerservicios img{
+    width: 200px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.footerservicios ul{
+    font-size: 20px;
+}
+
+.footerservicios section div{
+    width: 50px;
+}
+
+.footerservicios section div img{
+    width: 30px;
+    height: 30px;
+}
+
+}
+
 
   /*¿Donde estamos? ubicacion*/
 
